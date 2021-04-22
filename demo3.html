@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function samplefuntion()
+        {
+            document.getElementById("output").innerHTML="this is new content after button clicked";
+            //document.write( "I am Sample Function")
+        }
+        function ValidateUser()
+        {
+            var uname=document.getElementById("txtusername").value;
+            var pwd=document.getElementById("txtPassword").value;
+            console.log(uname + " "+pwd);
+            if( uname.length > 0 && pwd.length>0)
+            {
+                if(uname=== "System" && pwd=="Admin")
+                {
+                    alert("Login successful")
+                }
+                else{
+                    alert("invalid credentials");
+                }
+            }
+            else{
+                alert("Enter the username and password")
+            }
+
+        }
+
+        function createTable()
+        {
+            alert("table fun is working");
+        var table= "<table border='1'><tr>  <td> s.no</td><td> Name </td> </tr></table>";
+        console.log(table);
+        //document.createElement(table);
+               // document.write(table);
+                document.getElementById("tblDiv").innerHTML= table;
+        }
+       // samplefuntion();
+    </script>
+</head>
+<body>
+    <form>
+        <label for="txtusername" name="lblusername"> Enter the Username</label>
+        <input type="text" id="txtusername"> <br/><br/>
+        <label for="txtpassword" name="lblpassowrd">  Enter the password 
+               </label>
+        <input type="password" id="txtPassword"><br/><br/>
+        <input type="submit" value="Login" onclick="ValidateUser()"><br/>
+    </form>
+    <div id="output">
+
+    </div>
+    <button type="submit" onclick="samplefuntion()"> Click me</button>
+    <br/>
+
+    <br/>
+    <input type="button" value="create table" onclick="createTable()" />
+    <div id="tblDiv">
+
+    </div>
+</body>
+</html>

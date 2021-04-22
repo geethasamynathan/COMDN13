@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+typearray =['animal','lang','fruits'];
+dataarray=[['cat','dog','tiger'],['java','js','python'],['apple','mango','banana']];
+function fillDD() {
+var typeDD=document.getElementById('type');
+for(i=0;i<typearray.length;i++)
+{
+	var ele=document.createElement('option');	
+	ele.text=typearray[i];
+	typeDD.add(ele,i+1);
+}
+}
+
+function fillData()
+{
+var typeDD=document.getElementById('type');
+var selectidx=typeDD.selectedIndex;
+console.log(selectidx);
+var dataDD=document.getElementById('data');
+
+dataDD.innerText=null;
+ ul=document.createElement('ul');
+ var seconddiv=document.getElementById("secondDD");
+ seconddiv.appendChild(ul)
+
+	for(i=0;i<dataarray[selectidx-1].length;i++)
+	{
+		
+		var eleli=document.createElement('p');
+		eleli.innerHTML=dataarray[selectidx-1][i];
+		ul.appendChild(eleli);
+	// var ele=document.createElement('option');	
+	// ele.text=dataarray[selectidx-1][i];
+	// dataDD.appendChild(ele,i+1);
+	}
+
+
+	
+}
+</script>
+</head>
+<body onload="fillDD()">
+	<div id="FirstDD">
+<select id="type" onchange="fillData()">
+	<option>SELECT Type</option>
+</select>
+<select id="data"> <option>SELECT </option></select>
+</div>
+<div id="secondDD">
+
+	</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

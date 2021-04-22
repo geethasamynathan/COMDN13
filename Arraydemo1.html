@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Title</title>
+</head>
+<body>
+<script>
+
+var myarray=[1001,101,2002,2001];
+
+for(var i=0;i<4;i++)
+{
+document.write("<br>  Element "+[i+1]+" ="  +myarray[i])
+}
+document.write ("<br<br> <h3> retriving array elements using foreach loop</h3>")
+myarray.forEach(element => {
+    document.write("<br>  Element "+element);
+});
+
+var array1=new Array(10);
+
+for( var i=0;i<3;i++)
+{
+    array1[i]=Number(prompt("Enter the Number"));
+}
+array1.forEach(elem =>{
+    document.write("<br>  Element "+elem);
+});
+document.write("<br/> Length of the Array " +array1.length);
+document.write( "<br> last element  "+array1[array1.length-1])
+
+var arr1=new Array(4,78,34);
+alert(arr1)
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

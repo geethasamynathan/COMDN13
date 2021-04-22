@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+
+        document.write(new Date());
+        var dateOfBirth = new Date("January 13, 1980 11:20:00");
+document.write("<br/> DOB ="+dateOfBirth);
+var birthyear = dateOfBirth.getFullYear();
+document.write( "<br/> Birth Year is ="+ birthyear)
+var birthmonth=dateOfBirth.getMonth();
+document.write( "<br/> Birth Month is ="+ birthmonth)
+var birthdate= dateOfBirth.getDate();
+document.write( "<br/> Birth Date is ="+ birthdate)
+var birthday= dateOfBirth.getDay();
+document.write( "<br/> Birth day is ="+ birthday)
+/*
+var dateOfBirth = new Date(1980, 1, 13, 11, 20, 0, 0);
+document.write("<br>DOB ="+dateOfBirth);
+
+var year = new Date(1980, 0, 13, 11, 20, 0, 0).getFullYear();
+document.write("<br>Year " +year);
+var month = new Date(1980, 4, 13, 11, 20, 0, 0).getMonth();
+document.write("<br> Mont "+ month);
+*/
+/*
+function getMonthNameFromNumber(monthNumber)    
+{
+    var monthNames = ["January", "February", "March", "April",
+                        "May", "June", "July", "August", "September", 
+                        "October", "November", "December"];
+    return monthNames[monthNumber];
+}
+var monthName = getMonthNameFromNumber(new Date(1980, 0, 13, 11, 20, 0, 0).getMonth());
+document.write("<br> "+monthName);
+
+var day=new Date(2019, 08, 23).getDay();
+document.write("</br>"+day);
+*/
+        </script>
+</body>
+</html>
